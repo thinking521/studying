@@ -1,0 +1,28 @@
+<style>
+  .form-control1 {
+    width: 60%;
+  }
+</style>
+
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-6 col-md-offset-3 column">
+      <form role="form" ng-submit="funLogin()">
+        <div class="form-group">
+          <label for="id">用户名</label>
+          <input type="text" id="id" ng-model="user.id" class="form-control form-control1" autofocus />
+        </div>
+
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" ng-model="user.password" class="form-control form-control1" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-default btn_submit">登录</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
